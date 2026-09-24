@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Toy Haven | Home</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" href="favicon.svg">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <a href="index.html" class="logo">
+      <img src="logo.svg" alt="Toy Haven Logo">
+    </a>
+    <nav aria-label="Main Navigation">
+      <button class="hamburger" aria-expanded="false" aria-controls="main-menu" aria-label="Toggle Navigation Menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul id="main-menu">
+        <li><a href="index.html" class="active" aria-current="page">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="wishlist.html">Wishlist</a></li>
+        <li><a href="cart.html">Cart</a></li>
+        <li><a href="support.html">Support</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- One product at a time; automatic rotation can be paused. -->
+    <section class="product-slideshow" aria-label="Featured products" aria-roledescription="carousel">
+      <h1 class="visually-hidden">Discover Toy Haven collectibles and toys</h1>
+      <div class="hero-slides">
+        <article class="hero-slide" role="group" aria-roledescription="slide" aria-label="1 of 12">
+          <div class="slide-copy"><span class="eyebrow">Figurines</span><h2>Mecha Suit Warrior</h2><p class="slide-price">$45.00</p><a class="cta-btn" href="products.html">Shop the collection &rarr;</a></div>
+          <figure><img src="images/mecha-warrior.jpg" alt="Mecha Suit Warrior" fetchpriority="high"></figure>
+        </article>
+        <article class="hero-slide" role="group" aria-roledescription="slide" aria-label="2 of 12" hidden>
+          <div class="slide-copy"><span class="eyebrow">Diecast Cars</span><h2>1:24 Diecast Sports Car</h2><p class="slide-price">$29.99</p><a class="cta-btn" href="products.html">Shop the collection &rarr;</a></div>
+          <figure><img src="images/sports-car.jpg" alt="1:24 Diecast Sports Car" loading="lazy"></figure>
+        </article>
+        <article class="hero-slide" role="group" aria-roledescription="slide" aria-label="3 of 12" hidden>
+          <div class="slide-copy"><span class="eyebrow">Board Games</span><h2>Tuk Tik Tok Board Game</h2><p class="slide-price">$39.99</p><a class="cta-btn" href="products.html">Shop the collection &rarr;</a></div>
+          <figure><img src="images/board-game.jpg" alt="Tuk Tik Tok Board Game" loading="lazy"></figure>
+        </article>
+        <article class="hero-slide" role="group" aria-roledescription="slide" aria-label="4 of 12" hidden>
+          <div class="slide-copy"><span class="eyebrow">Toys</span><h2>Vintage Plush Bear</h2><p class="slide-price">$18.50</p><a class="cta-btn" href="products.html">Shop the collection &rarr;</a></div>
+          <figure><img src="images/teddy-bear.jpg" alt="Vintage Plush Bear" loading="lazy"></figure>
+        </article>
+        <article class="hero-slide" role="group" aria-roledescription="slide" aria-label="5 of 12" hidden>
+          <div class="slide-copy"><span class="eyebrow">Figurines</span><h2>Neon Cyberpunk Statue</h2><p class="slide-price">$59.99</p><a class="cta-btn" href="products.html">Shop the collection &rarr;</a></div>
+          <figure><img src="images/cyberpunk-statue.jpg" alt="Neon Cyberpunk Statue" loading="lazy"></figure>
+        </article>
+        <article class="hero-slide" role="group" aria-roledescription="slide" aria-label="6 of 12" hidden>
+          <div class="slide-copy"><span class="eyebrow">Diecast Cars</span><h2>1:18 Classic Muscle Car</h2><p class="slide-price">$42.00</p><a class="cta-btn" href="products.html">Shop the collection &rarr;</a></div>
+          <figure><img src="images/muscle-car.jpg" alt="1:18 Classic Muscle Car" loading="lazy"></figure>
+        </article>
+        <article class="hero-slide" role="group" aria-roledescription="slide" aria-label="7 of 12" hidden>
+          <div class="slide-copy"><span class="eyebrow">Board Games</span><h2>Dungeon Quest Deck</h2><p class="slide-price">$24.99</p><a class="cta-btn" href="products.html">Shop the collection &rarr;</a></div>
+          <figure><img src="images/dungeon-deck.jpg" alt="Dungeon Quest Deck" loading="lazy"></figure>
+        </article>
+        <article class="hero-slide" role="group" aria-roledescription="slide" aria-label="8 of 12" hidden>
+          <div class="slide-copy"><span class="eyebrow">Toys</span><h2>Wooden Architecture Blocks</h2><p class="slide-price">$22.00</p><a class="cta-btn" href="products.html">Shop the collection &rarr;</a></div>
+          <figure><img src="images/wooden-blocks.jpg" alt="Wooden Architecture Blocks" loading="lazy"></figure>
+        </article>
+        <article class="hero-slide" role="group" aria-roledescription="slide" aria-label="9 of 12" hidden>
+          <div class="slide-copy"><span class="eyebrow">Figurines</span><h2>Chibi Hero Edition</h2><p class="slide-price">$34.99</p><a class="cta-btn" href="products.html">Shop the collection &rarr;</a></div>
+          <figure><img src="images/chibi-hero.jpg" alt="Chibi Hero Edition" loading="lazy"></figure>
+        </article>
+        <article class="hero-slide" role="group" aria-roledescription="slide" aria-label="10 of 12" hidden>
+          <div class="slide-copy"><span class="eyebrow">Diecast Cars</span><h2>1:43 Retro Rally Racer</h2><p class="slide-price">$19.99</p><a class="cta-btn" href="products.html">Shop the collection &rarr;</a></div>
+          <figure><img src="images/rally-racer.jpg" alt="1:43 Retro Rally Racer" loading="lazy"></figure>
+        </article>
+        <article class="hero-slide" role="group" aria-roledescription="slide" aria-label="11 of 12" hidden>
+          <div class="slide-copy"><span class="eyebrow">Board Games</span><h2>Handcrafted Wooden Chess Set</h2><p class="slide-price">$65.00</p><a class="cta-btn" href="products.html">Shop the collection &rarr;</a></div>
+          <figure><img src="images/wooden-chess.jpg" alt="Handcrafted Wooden Chess Set" loading="lazy"></figure>
+        </article>
+        <article class="hero-slide" role="group" aria-roledescription="slide" aria-label="12 of 12" hidden>
+          <div class="slide-copy"><span class="eyebrow">Toys</span><h2>Mini RC Quadcopter</h2><p class="slide-price">$49.99</p><a class="cta-btn" href="products.html">Shop the collection &rarr;</a></div>
+          <figure><img src="images/rc-drone.jpg" alt="Mini RC Quadcopter" loading="lazy"></figure>
+        </article>
+      </div>
+      <div class="slideshow-controls" hidden>
+        <button type="button" class="slide-prev" aria-label="Previous product">&#10094;</button>
+        <span class="slide-counter">1 / 12</span>
+        <button type="button" class="slide-next" aria-label="Next product">&#10095;</button>
+      </div>
+      <p class="visually-hidden slide-announcement" aria-live="polite" aria-atomic="true"></p>
+    </section>
+
+    <!-- Horizontal Scroll Showcase Section -->
+    <section class="scroll-showcase" id="featured-products">
+      <h2>Small finds. Big favourites.</h2>
+      
+      <div class="showcase-wrapper">
+        <button type="button" class="scroll-arrow left" aria-label="Previous Products">&#10094;</button>
+
+        <div class="scroll-container">
+          <!-- Item 1 -->
+          <article class="scroll-card product-card" data-category="Figurines">
+            <figure>
+              <img src="images/mecha-warrior.jpg" alt="Mecha Suit Warrior Figurine">
+            </figure>
+            <h3>Mecha Suit Warrior</h3>
+            <p class="category-tag">Figurines</p>
+            <p class="price">$45.00</p>
+            <button type="button" class="add-cart-btn">Add to Cart</button>
+            <button type="button" class="add-wishlist-btn">Add to Wishlist</button>
+          </article>
+
+          <!-- Item 2 -->
+          <article class="scroll-card product-card" data-category="Diecast Cars">
+            <figure>
+              <img src="images/sports-car.jpg" alt="1:24 Diecast Sports Car">
+            </figure>
+            <h3>1:24 Diecast Sports Car</h3>
+            <p class="category-tag">Diecast Cars</p>
+            <p class="price">$29.99</p>
+            <button type="button" class="add-cart-btn">Add to Cart</button>
+            <button type="button" class="add-wishlist-btn">Add to Wishlist</button>
+          </article>
+
+          <!-- Item 3 -->
+          <article class="scroll-card product-card" data-category="Board Games">
+            <figure>
+              <img src="images/board-game.jpg" alt="Tuk Tik Tok Board Game">
+            </figure>
+            <h3>Tuk Tik Tok Board Game</h3>
+            <p class="category-tag">Board Games</p>
+            <p class="price">$39.99</p>
+            <button type="button" class="add-cart-btn">Add to Cart</button>
+            <button type="button" class="add-wishlist-btn">Add to Wishlist</button>
+          </article>
+
+          <!-- Item 4 -->
+          <article class="scroll-card product-card" data-category="Toys">
+            <figure>
+              <img src="images/teddy-bear.jpg" alt="Vintage Plush Teddy Bear">
+            </figure>
+            <h3>Vintage Plush Bear</h3>
+            <p class="category-tag">Toys</p>
+            <p class="price">$18.50</p>
+            <button type="button" class="add-cart-btn">Add to Cart</button>
+            <button type="button" class="add-wishlist-btn">Add to Wishlist</button>
+          </article>
+
+          <!-- Item 5 -->
+          <article class="scroll-card product-card" data-category="Figurines">
+            <figure>
+              <img src="images/cyberpunk-statue.jpg" alt="Neon Cyberpunk Hero Statue">
+            </figure>
+            <h3>Neon Cyberpunk Statue</h3>
+            <p class="category-tag">Figurines</p>
+            <p class="price">$59.99</p>
+            <button type="button" class="add-cart-btn">Add to Cart</button>
+            <button type="button" class="add-wishlist-btn">Add to Wishlist</button>
+          </article>
+        </div>
+
+        <button type="button" class="scroll-arrow right" aria-label="Next Products">&#10095;</button>
+      </div>
+    </section>
+
+</main>
+
+  <!-- Footer -->
+  <footer>
+    <section class="footer-newsletter" aria-labelledby="newsletter-title">
+      <div>
+        <h2 id="newsletter-title">Stay Updated</h2>
+        <p>Subscribe to our newsletter for exclusive offers and new arrivals.</p>
+      </div>
+      <form id="newsletter-form">
+        <label for="newsletter-email" class="visually-hidden">Email Address</label>
+        <input type="email" id="newsletter-email" name="email" autocomplete="email" placeholder="Enter your email" required>
+        <button type="submit">Subscribe</button>
+      </form>
+    </section>
+    <nav aria-label="Footer Navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="wishlist.html">Wishlist</a></li>
+        <li><a href="cart.html">Cart</a></li>
+        <li><a href="support.html">Support</a></li>
+      </ul>
+    </nav>
+    <p>&copy; 2026 Toy Haven. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

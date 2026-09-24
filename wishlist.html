@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Toy Haven | My Wishlist</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" href="favicon.svg">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <a href="index.html" class="logo">
+      <img src="logo.svg" alt="Toy Haven Logo">
+    </a>
+    <nav aria-label="Main Navigation">
+      <button class="hamburger" aria-expanded="false" aria-controls="main-menu" aria-label="Toggle Navigation Menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul id="main-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="wishlist.html" class="active" aria-current="page">Wishlist</a></li>
+        <li><a href="cart.html">Cart</a></li>
+        <li><a href="support.html">Support</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Saved Items Collection Container -->
+  <main class="wishlist-page">
+    <h1>My Collection & Wishlist</h1>
+
+    <section class="wishlist-grid" id="wishlist-container">
+      <!-- Collection Entry Template Card -->
+      <article class="wishlist-card">
+        <figure>
+          <img src="images/mecha-warrior.jpg" alt="Collectible Figurine">
+        </figure>
+        <h2>Anime Figurine - Series 1</h2>
+        <!-- Custom Category Status Selector -->
+        <form class="status-selector">
+          <label for="status-1">Collection Status:</label>
+          <select id="status-1" name="status">
+            <option value="Interested" selected>Interested</option>
+            <option value="Owned">Owned</option>
+            <option value="Not Interested">Not Interested</option>
+          </select>
+        </form>
+        <button type="button" class="remove-wishlist-btn">Remove Item</button>
+      </article>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <section class="footer-newsletter" aria-labelledby="newsletter-title">
+      <div>
+        <h2 id="newsletter-title">Stay Updated</h2>
+        <p>Subscribe to our newsletter for exclusive offers and new arrivals.</p>
+      </div>
+      <form id="newsletter-form">
+        <label for="newsletter-email" class="visually-hidden">Email Address</label>
+        <input type="email" id="newsletter-email" name="email" autocomplete="email" placeholder="Enter your email" required>
+        <button type="submit">Subscribe</button>
+      </form>
+    </section>
+    <nav aria-label="Footer Navigation">
+      <ul>
+        <li><a href="products.html">Shop All</a></li>
+        <li><a href="support.html">FAQ & Support</a></li>
+      </ul>
+    </nav>
+    <p>&copy; 2026 Toy Haven. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

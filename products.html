@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Toy Haven | Products</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" href="favicon.svg">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <a href="index.html" class="logo">
+      <img src="logo.svg" alt="Toy Haven Logo">
+    </a>
+    <nav aria-label="Main Navigation">
+      <button class="hamburger" aria-expanded="false" aria-controls="main-menu" aria-label="Toggle Navigation Menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul id="main-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html" class="active" aria-current="page">Products</a></li>
+        <li><a href="wishlist.html">Wishlist</a></li>
+        <li><a href="cart.html">Cart</a></li>
+        <li><a href="support.html">Support</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Catalog Layout Container -->
+  <main class="products-layout">
+    <!-- Filtering & Search Sidebar -->
+    <aside class="filters-sidebar">
+      <h2>Filter Products</h2>
+      <form id="filter-form">
+        <!-- Live Search Input -->
+        <search>
+          <label for="product-search">Search:</label>
+          <input type="search" id="product-search" placeholder="Search toys...">
+        </search>
+        
+        <!-- Category Filter Radio Group -->
+        <fieldset>
+          <legend>Categories</legend>
+          <label><input type="radio" name="category" value="all" checked> All Products</label>
+          <label><input type="radio" name="category" value="Figurines"> Figurines</label>
+          <label><input type="radio" name="category" value="Toys"> Toys</label>
+          <label><input type="radio" name="category" value="Board Games"> Board Games</label>
+          <label><input type="radio" name="category" value="Diecast Cars"> Diecast Cars</label>
+        </fieldset>
+      </form>
+    </aside>
+
+    <!-- Interactive Product Grid Section -->
+    <section class="product-catalog" aria-live="polite">
+      <h2>All Products</h2>
+
+      <!-- Item 1: Figurine -->
+      <article class="product-card" data-category="Figurines">
+        <figure>
+          <img src="images/mecha-warrior.jpg" alt="Mecha Suit Warrior Figurine">
+        </figure>
+        <h3>Mecha Suit Warrior</h3>
+        <p class="category-tag">Figurines</p>
+        <p class="price">$45.00</p>
+        <button type="button" class="add-cart-btn">Add to Cart</button>
+        <button type="button" class="add-wishlist-btn">Add to Wishlist</button>
+      </article>
+
+      <!-- Item 2: Diecast Car -->
+      <article class="product-card" data-category="Diecast Cars">
+        <figure>
+          <img src="images/sports-car.jpg" alt="1:24 Diecast Sports Car">
+        </figure>
+        <h3>1:24 Diecast Sports Car</h3>
+        <p class="category-tag">Diecast Cars</p>
+        <p class="price">$29.99</p>
+        <button type="button" class="add-cart-btn">Add to Cart</button>
+        <button type="button" class="add-wishlist-btn">Add to Wishlist</button>
+      </article>
+
+      <!-- Item 3: Board Game -->
+      <article class="product-card" data-category="Board Games">
+        <figure>
+          <img src="images/board-game.jpg" alt="Tuk Tik Tok Board Game">
+        </figure>
+        <h3>Tuk Tik Tok Board Game</h3>
+        <p class="category-tag">Board Games</p>
+        <p class="price">$39.99</p>
+        <button type="button" class="add-cart-btn">Add to Cart</button>
+        <button type="button" class="add-wishlist-btn">Add to Wishlist</button>
+      </article>
+
+      <!-- Item 4: Plushie -->
+      <article class="product-card" data-category="Toys">
+        <figure>
+          <img src="images/teddy-bear.jpg" alt="Vintage Plush Teddy Bear">
+        </figure>
+        <h3>Vintage Plush Bear</h3>
+        <p class="category-tag">Toys</p>
+        <p class="price">$18.50</p>
+        <button type="button" class="add-cart-btn">Add to Cart</button>
+        <button type="button" class="add-wishlist-btn">Add to Wishlist</button>
+      </article>
+
+      <!-- Item 5: Figurine -->
+      <article class="product-card" data-category="Figurines">
+        <figure>
+          <img src="images/cyberpunk-statue.jpg" alt="Neon Cyberpunk Hero Statue">
+        </figure>
+        <h3>Neon Cyberpunk Statue</h3>
+        <p class="category-tag">Figurines</p>
+        <p class="price">$59.99</p>
+        <button type="button" class="add-cart-btn">Add to Cart</button>
+        <button type="button" class="add-wishlist-btn">Add to Wishlist</button>
+      </article>
+
+      <!-- Item 6: Diecast Car -->
+      <article class="product-card" data-category="Diecast Cars">
+        <figure>
+          <img src="images/muscle-car.jpg" alt="1:18 Classic Muscle Car Model">
+        </figure>
+        <h3>1:18 Classic Muscle Car</h3>
+        <p class="category-tag">Diecast Cars</p>
+        <p class="price">$42.00</p>
+        <button type="button" class="add-cart-btn">Add to Cart</button>
+        <button type="button" class="add-wishlist-btn">Add to Wishlist</button>
+      </article>
+
+      <!-- Item 7: Board Game -->
+      <article class="product-card" data-category="Board Games">
+        <figure>
+          <img src="images/dungeon-deck.jpg" alt="Dungeon Quest Card Game">
+        </figure>
+        <h3>Dungeon Quest Deck</h3>
+        <p class="category-tag">Board Games</p>
+        <p class="price">$24.99</p>
+        <button type="button" class="add-cart-btn">Add to Cart</button>
+        <button type="button" class="add-wishlist-btn">Add to Wishlist</button>
+      </article>
+
+      <!-- Item 8: Wooden Toy -->
+      <article class="product-card" data-category="Toys">
+        <figure>
+          <img src="images/wooden-blocks.jpg" alt="Wooden Architecture Toy Blocks">
+        </figure>
+        <h3>Wooden Architecture Blocks</h3>
+        <p class="category-tag">Toys</p>
+        <p class="price">$22.00</p>
+        <button type="button" class="add-cart-btn">Add to Cart</button>
+        <button type="button" class="add-wishlist-btn">Add to Wishlist</button>
+      </article>
+
+      <!-- Item 9: Figurine -->
+      <article class="product-card" data-category="Figurines">
+        <figure>
+          <img src="images/chibi-hero.jpg" alt="Chibi Hero Edition Anime Figurine">
+        </figure>
+        <h3>Chibi Hero Edition</h3>
+        <p class="category-tag">Figurines</p>
+        <p class="price">$34.99</p>
+        <button type="button" class="add-cart-btn">Add to Cart</button>
+        <button type="button" class="add-wishlist-btn">Add to Wishlist</button>
+      </article>
+
+      <!-- Item 10: Diecast Car -->
+      <article class="product-card" data-category="Diecast Cars">
+        <figure>
+          <img src="images/rally-racer.jpg" alt="1:43 Retro Rally Racer Car">
+        </figure>
+        <h3>1:43 Retro Rally Racer</h3>
+        <p class="category-tag">Diecast Cars</p>
+        <p class="price">$19.99</p>
+        <button type="button" class="add-cart-btn">Add to Cart</button>
+        <button type="button" class="add-wishlist-btn">Add to Wishlist</button>
+      </article>
+
+      <!-- Item 11: Board Game -->
+      <article class="product-card" data-category="Board Games">
+        <figure>
+          <img src="images/wooden-chess.jpg" alt="Handcrafted Wooden Chess Board Set">
+        </figure>
+        <h3>Handcrafted Wooden Chess Set</h3>
+        <p class="category-tag">Board Games</p>
+        <p class="price">$65.00</p>
+        <button type="button" class="add-cart-btn">Add to Cart</button>
+        <button type="button" class="add-wishlist-btn">Add to Wishlist</button>
+      </article>
+
+      <!-- Item 12: Flying Toy -->
+      <article class="product-card" data-category="Toys">
+        <figure>
+          <img src="images/rc-drone.jpg" alt="Mini Remote Control Quadcopter Drone">
+        </figure>
+        <h3>Mini RC Quadcopter</h3>
+        <p class="category-tag">Toys</p>
+        <p class="price">$49.99</p>
+        <button type="button" class="add-cart-btn">Add to Cart</button>
+        <button type="button" class="add-wishlist-btn">Add to Wishlist</button>
+      </article>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <section class="footer-newsletter" aria-labelledby="newsletter-title">
+      <div>
+        <h2 id="newsletter-title">Stay Updated</h2>
+        <p>Subscribe to our newsletter for exclusive offers and new arrivals.</p>
+      </div>
+      <form id="newsletter-form">
+        <label for="newsletter-email" class="visually-hidden">Email Address</label>
+        <input type="email" id="newsletter-email" name="email" autocomplete="email" placeholder="Enter your email" required>
+        <button type="submit">Subscribe</button>
+      </form>
+    </section>
+    <nav aria-label="Footer Navigation">
+      <ul>
+        <li><a href="products.html">Shop All</a></li>
+        <li><a href="support.html">FAQ & Support</a></li>
+      </ul>
+    </nav>
+    <p>&copy; 2026 Toy Haven. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Toy Haven | Checkout</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" href="favicon.svg">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <a href="index.html" class="logo">
+      <img src="logo.svg" alt="Toy Haven Logo">
+    </a>
+    <nav aria-label="Main Navigation">
+      <button class="hamburger" aria-expanded="false" aria-controls="main-menu" aria-label="Toggle Navigation Menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul id="main-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="wishlist.html">Wishlist</a></li>
+        <li><a href="cart.html">Cart</a></li>
+        <li><a href="support.html">Support</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Checkout Layout Structure -->
+  <main class="checkout-layout">
+    <h1>Checkout</h1>
+
+    <!-- Customer Details and Order Submission Form -->
+    <form id="checkout-form">
+      <fieldset>
+        <legend>Personal & Delivery Information</legend>
+        <p>
+          <label for="fullname">Full Name:</label>
+          <input type="text" id="fullname" name="fullname" required>
+        </p>
+        <p>
+          <label for="email">Email Address:</label>
+          <input type="email" id="email" name="email" required>
+        </p>
+        <p>
+          <label for="address">Delivery Address:</label>
+          <textarea id="address" name="address" rows="3" required></textarea>
+        </p>
+      </fieldset>
+
+      <fieldset>
+        <legend>Payment Method</legend>
+        <label><input type="radio" name="payment" value="card" checked> Credit/Debit Card</label>
+        <label><input type="radio" name="payment" value="cod"> Cash on Delivery</label>
+      </fieldset>
+
+      <button type="submit" id="place-order-btn">Confirm & Pay</button>
+    </form>
+
+    <!-- Side Order Details Review -->
+    <aside class="order-summary-sidebar">
+      <h2>Order Summary</h2>
+      <ul id="checkout-item-list"></ul>
+      <p class="final-total">Final Amount: <strong id="checkout-total">$0.00</strong></p>
+    </aside>
+
+    <!-- Native HTML5 Dialog replacement for Modal (Clear Cart on Trigger) -->
+    <dialog id="success-modal">
+      <h2>Order Confirmed!</h2>
+      <p>Thank you for shopping at Toy Haven. Your order details have been saved.</p>
+      <button type="button" id="close-modal-btn">Continue Shopping</button>
+    </dialog>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <section class="footer-newsletter" aria-labelledby="newsletter-title">
+      <div>
+        <h2 id="newsletter-title">Stay Updated</h2>
+        <p>Subscribe to our newsletter for exclusive offers and new arrivals.</p>
+      </div>
+      <form id="newsletter-form">
+        <label for="newsletter-email" class="visually-hidden">Email Address</label>
+        <input type="email" id="newsletter-email" name="email" autocomplete="email" placeholder="Enter your email" required>
+        <button type="submit">Subscribe</button>
+      </form>
+    </section>
+    <nav aria-label="Footer Navigation">
+      <ul>
+        <li><a href="products.html">Shop All</a></li>
+        <li><a href="support.html">FAQ & Support</a></li>
+      </ul>
+    </nav>
+    <p>&copy; 2026 Toy Haven. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

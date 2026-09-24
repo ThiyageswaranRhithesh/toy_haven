@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Toy Haven | Shopping Cart</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" href="favicon.svg">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <a href="index.html" class="logo">
+      <img src="logo.svg" alt="Toy Haven Logo">
+    </a>
+    <nav aria-label="Main Navigation">
+      <button class="hamburger" aria-expanded="false" aria-controls="main-menu" aria-label="Toggle Navigation Menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul id="main-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="wishlist.html">Wishlist</a></li>
+        <li><a href="cart.html" class="active" aria-current="page">Cart</a></li>
+        <li><a href="support.html">Support</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Shopping Cart Interface Container -->
+  <main class="cart-layout">
+    <!-- Active Items List -->
+    <section class="cart-items-container">
+      <h1>Your Shopping Cart</h1>
+      <ul class="cart-list" id="cart-list">
+        <!-- Rendered via LocalStorage Array in JS -->
+        <li class="cart-item">
+          <article>
+            <img src="images/board-game.jpg" alt="Strategy Board Game">
+            <h3>Strategy Board Game</h3>
+            <p class="unit-price">$39.99</p>
+            <!-- Incremental Quantity Modifiers -->
+            <form class="quantity-controls">
+              <label for="qty-1">Qty:</label>
+              <button type="button" aria-label="Decrease quantity">-</button>
+              <input type="number" id="qty-1" value="1" min="1">
+              <button type="button" aria-label="Increase quantity">+</button>
+            </form>
+            <p class="subtotal">Subtotal: $39.99</p>
+            <button type="button" class="remove-btn">Remove</button>
+          </article>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Dynamic Cart Total Summary Sidebar -->
+    <aside class="cart-summary">
+      <h2>Order Summary</h2>
+      <p class="total-price">Total: <strong id="cart-total">$39.99</strong></p>
+      <button type="button" id="clear-cart-btn">Clear Cart</button>
+      <a href="checkout.html" class="checkout-btn">Proceed to Checkout</a>
+    </aside>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <section class="footer-newsletter" aria-labelledby="newsletter-title">
+      <div>
+        <h2 id="newsletter-title">Stay Updated</h2>
+        <p>Subscribe to our newsletter for exclusive offers and new arrivals.</p>
+      </div>
+      <form id="newsletter-form">
+        <label for="newsletter-email" class="visually-hidden">Email Address</label>
+        <input type="email" id="newsletter-email" name="email" autocomplete="email" placeholder="Enter your email" required>
+        <button type="submit">Subscribe</button>
+      </form>
+    </section>
+    <nav aria-label="Footer Navigation">
+      <ul>
+        <li><a href="products.html">Shop All</a></li>
+        <li><a href="support.html">FAQ & Support</a></li>
+      </ul>
+    </nav>
+    <p>&copy; 2026 Toy Haven. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

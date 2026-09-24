@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <rect x="0" y="0" width="64" height="64" rx="16" fill="#E63946"/>
+  <!-- Bear Ears -->
+  <circle cx="22" cy="20" r="8" fill="#FFFFFF"/>
+  <circle cx="42" cy="20" r="8" fill="#FFFFFF"/>
+  <!-- Head -->
+  <rect x="16" y="24" width="32" height="28" rx="7" fill="#FFFFFF"/>
+  <!-- Eyes -->
+  <circle cx="26" cy="34" r="2.5" fill="#2A2D34"/>
+  <circle cx="38" cy="34" r="2.5" fill="#2A2D34"/>
+  <!-- Smile -->
+  <path d="M 27 42 Q 32 47 37 42" stroke="#E63946" stroke-width="3" fill="none" stroke-linecap="round"/>
+</svg>

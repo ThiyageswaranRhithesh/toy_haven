@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Toy Haven | Support & FAQ</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" href="favicon.svg">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <a href="index.html" class="logo">
+      <img src="logo.svg" alt="Toy Haven Logo">
+    </a>
+    <nav aria-label="Main Navigation">
+      <button class="hamburger" aria-expanded="false" aria-controls="main-menu" aria-label="Toggle Navigation Menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul id="main-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="wishlist.html">Wishlist</a></li>
+        <li><a href="cart.html">Cart</a></li>
+        <li><a href="support.html" class="active" aria-current="page">Support</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Support Page Container -->
+  <main class="support-layout">
+    <!-- User Feedback Contact Form -->
+    <section class="feedback-section">
+      <h1>Feedback & Support</h1>
+      <form id="feedback-form">
+        <p>
+          <label for="feedback-name">Name:</label>
+          <input type="text" id="feedback-name" name="name" required>
+        </p>
+        <p>
+          <label for="feedback-email">Email:</label>
+          <input type="email" id="feedback-email" name="email" required>
+        </p>
+        <p>
+          <label for="feedback-msg">Message:</label>
+          <textarea id="feedback-msg" name="message" rows="5" required></textarea>
+        </p>
+        <button type="submit">Submit Feedback</button>
+      </form>
+      <output id="form-feedback-message" aria-live="polite"></output>
+    </section>
+
+    <!-- Semantic Accordion FAQ Implementation -->
+    <section class="faq-section">
+      <h2>Frequently Asked Questions</h2>
+
+      <details>
+        <summary>How long does shipping take?</summary>
+        <p>Standard delivery takes 3 to 5 business days across the UK.</p>
+      </details>
+
+      <details>
+        <summary>Can I track my order?</summary>
+        <p>Yes, order details and tracking history are stored in your browser's local storage.</p>
+      </details>
+
+      <details>
+        <summary>What is your return policy?</summary>
+        <p>We accept returns on unopened collectibles within 14 days of receipt.</p>
+      </details>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <section class="footer-newsletter" aria-labelledby="newsletter-title">
+      <div>
+        <h2 id="newsletter-title">Stay Updated</h2>
+        <p>Subscribe to our newsletter for exclusive offers and new arrivals.</p>
+      </div>
+      <form id="newsletter-form">
+        <label for="newsletter-email" class="visually-hidden">Email Address</label>
+        <input type="email" id="newsletter-email" name="email" autocomplete="email" placeholder="Enter your email" required>
+        <button type="submit">Subscribe</button>
+      </form>
+    </section>
+    <nav aria-label="Footer Navigation">
+      <ul>
+        <li><a href="products.html">Shop All</a></li>
+        <li><a href="support.html">FAQ & Support</a></li>
+      </ul>
+    </nav>
+    <p>&copy; 2026 Toy Haven. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
