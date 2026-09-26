@@ -1,5 +1,5 @@
 // Change this cache version whenever deploying updated website assets.
-const CACHE = 'toyhaven-v2';
+const CACHE = 'toyhaven-v3';
 const ASSETS = [
   "./",
   "./logo.svg",
@@ -15,8 +15,8 @@ const ASSETS = [
   "./script.js",
   "./carousel.js",
   "./products-data.js",
-  "./icons/icon-192.png",
-  "./icons/icon-512.png",
+  "./icons/icons-192.png",
+  "./icons/icons-512.png",
   "./images/dungeon-deck.jpg",
   "./images/rally-racer.jpg",
   "./images/wooden-chess.jpg",
